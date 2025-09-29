@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilização do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f8;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+/* Wrapper geral da página */
+.form-page {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+/* Título */
+.form-page h2 {
+  text-align: center;
+  color: #c0392b;
+  margin-bottom: 25px;
+}
+
+/* Container do formulário */
+.form-container {
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Grupo de cada campo */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Inputs e Textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  display: block;
+  font-family: inherit;
+  resize: none;
+}
+
+/* Botão */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #c19064;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a3744e;
+}
+  </style>
+</head>
+<body>
+  <div class="form-page">
+    <h2>Formulário de Contato</h2>
+    <div class="form-container">
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Nome" required />
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Email" required />
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Sua mensagem..." rows="5" required></textarea>
+        </div>
+        <div class="form-group">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
